@@ -1,0 +1,86 @@
+:root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #0f172a;
+    --primary: #2563eb;
+    --radius: 12px;
+    --gap: 18px;
+    font-family: Inter, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body,
+#root {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--accent);
+}
+
+.app-root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+.header {
+    padding: 20px 28px;
+    background: linear-gradient(90deg, #eef2ff, #ffffff);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04)
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 0.2px
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.main {
+    flex: 1;
+    padding: 28px
+}
+
+.footer {
+    padding: 12px 28px;
+    font-size: 13px;
+    color: var(--muted);
+    background: transparent
+}
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    color: var(--muted)
+}
+
+.error {
+    color: #b91c1c
+}
